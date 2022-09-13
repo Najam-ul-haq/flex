@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        padding: 0;
+margin: 0;
+    }
+    
+    .container{
+        width: 100%;
+        height: 50vh;
+        
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .container::before{
+        content: "";
+        width: 100%;
+     height: 100%;
+     background-image: url(/images/wasa-crispbread-JisCJG3WvYY-unsplash.jpg);
+     background-position: center;
+     background-size: cover;
+position: absolute;
+opacity: 0.5;
+z-index: -1;
+    }
+    h1,p,span{
+        text-align: center;
+        background-color: brown;
+    }
+    li:nth-child(1){
+        background-color: brown;
+    }
+    li:nth-child(2n+1){
+        background-color: blue;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="text"><h1>this is the new website we make</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate possimus odit laboriosam ex aperiam aut unde numquam? Tempora error porro quibusdam eum asperiores, excepturi velit doloremque. Eum, illum dolor.</p></div>
+    
+    </div>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+    </ul>
+</body>
+</html>
