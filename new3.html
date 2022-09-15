@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 350px;
+           position: relative;
+        }
+        .box1{
+            background-color: rgba(0, 0, 0, 0.4);
+         width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: perspective(400px) rotateX(-80deg);
+            transform-origin:center top 0;
+            transition: all 1s ease 0s;
+            opacity: 0;
+        }
+        .box:hover .box1{
+            opacity: 1;
+            transform: perspective(400px) rotate(0deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="/images/8.jpg" alt="" width="400px" height="350px">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>
